@@ -39,8 +39,8 @@ jobs:
           echo "npm.pkg.github.com/:_authToken=${{env.NPM_TOKEN}}" >> ~/.npmrc
           cat ~/.npmrc
         
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      # - name: Install dependencies
+      #   uses: bahmutov/npm-install@v1
 
       - name: Build
         run: yarn build
