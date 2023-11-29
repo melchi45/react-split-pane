@@ -44,6 +44,7 @@ jobs:
 
       - name: Build
         run: |
+          npm install --location=global rollup
           npm install --location=global rimraf
           yarn build
 
